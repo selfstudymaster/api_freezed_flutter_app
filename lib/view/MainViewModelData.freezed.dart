@@ -37,6 +37,8 @@ abstract class $MainViewModelDataCopyWith<$Res> {
           MainViewModelData value, $Res Function(MainViewModelData) then) =
       _$MainViewModelDataCopyWithImpl<$Res>;
   $Res call({GoogleBooksResponse response, MainViewModelState viewModelState});
+
+  $GoogleBooksResponseCopyWith<$Res> get response;
 }
 
 class _$MainViewModelDataCopyWithImpl<$Res>
@@ -61,6 +63,16 @@ class _$MainViewModelDataCopyWithImpl<$Res>
           : viewModelState as MainViewModelState,
     ));
   }
+
+  @override
+  $GoogleBooksResponseCopyWith<$Res> get response {
+    if (_value.response == null) {
+      return null;
+    }
+    return $GoogleBooksResponseCopyWith<$Res>(_value.response, (value) {
+      return _then(_value.copyWith(response: value));
+    });
+  }
 }
 
 abstract class _$MainViewModelDataCopyWith<$Res>
@@ -70,6 +82,9 @@ abstract class _$MainViewModelDataCopyWith<$Res>
       __$MainViewModelDataCopyWithImpl<$Res>;
   @override
   $Res call({GoogleBooksResponse response, MainViewModelState viewModelState});
+
+  @override
+  $GoogleBooksResponseCopyWith<$Res> get response;
 }
 
 class __$MainViewModelDataCopyWithImpl<$Res>

@@ -11,7 +11,11 @@ _$_GoogleBooksResponse _$_$_GoogleBooksResponseFromJson(
   return _$_GoogleBooksResponse(
     kind: json['kind'] as String,
     totalItems: json['totalItems'] as int,
-    items: json['items'] as List,
+    items: (json['items'] as List)
+        ?.map((e) => e == null
+            ? null
+            : GoogleBookResponse.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
   );
 }
 

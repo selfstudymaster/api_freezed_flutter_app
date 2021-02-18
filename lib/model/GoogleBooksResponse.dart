@@ -1,6 +1,6 @@
+import 'package:api_freezed_flutter_app/model/GoogleBookResponse.dart';
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:state_notifier_test/model/GoogleBookResponse.dart';
 
 part 'GoogleBooksResponse.freezed.dart';
 part 'GoogleBooksResponse.g.dart';
