@@ -17,10 +17,10 @@ class _$GoogleBooksResponseTearOff {
 
 // ignore: unused_element
   _GoogleBooksResponse call(
-      {String kind, int totalItem, List<GoogleBookResponse> items}) {
+      {String kind, int totalItems, List<GoogleBookResponse> items}) {
     return _GoogleBooksResponse(
       kind: kind,
-      totalItem: totalItem,
+      totalItems: totalItems,
       items: items,
     );
   }
@@ -31,7 +31,7 @@ const $GoogleBooksResponse = _$GoogleBooksResponseTearOff();
 
 mixin _$GoogleBooksResponse {
   String get kind;
-  int get totalItem;
+  int get totalItems;
   List<GoogleBookResponse> get items;
 
   Map<String, dynamic> toJson();
@@ -42,7 +42,7 @@ abstract class $GoogleBooksResponseCopyWith<$Res> {
   factory $GoogleBooksResponseCopyWith(
           GoogleBooksResponse value, $Res Function(GoogleBooksResponse) then) =
       _$GoogleBooksResponseCopyWithImpl<$Res>;
-  $Res call({String kind, int totalItem, List<GoogleBookResponse> items});
+  $Res call({String kind, int totalItems, List<GoogleBookResponse> items});
 }
 
 class _$GoogleBooksResponseCopyWithImpl<$Res>
@@ -56,12 +56,12 @@ class _$GoogleBooksResponseCopyWithImpl<$Res>
   @override
   $Res call({
     Object kind = freezed,
-    Object totalItem = freezed,
+    Object totalItems = freezed,
     Object items = freezed,
   }) {
     return _then(_value.copyWith(
       kind: kind == freezed ? _value.kind : kind as String,
-      totalItem: totalItem == freezed ? _value.totalItem : totalItem as int,
+      totalItems: totalItems == freezed ? _value.totalItems : totalItems as int,
       items:
           items == freezed ? _value.items : items as List<GoogleBookResponse>,
     ));
@@ -74,7 +74,7 @@ abstract class _$GoogleBooksResponseCopyWith<$Res>
           $Res Function(_GoogleBooksResponse) then) =
       __$GoogleBooksResponseCopyWithImpl<$Res>;
   @override
-  $Res call({String kind, int totalItem, List<GoogleBookResponse> items});
+  $Res call({String kind, int totalItems, List<GoogleBookResponse> items});
 }
 
 class __$GoogleBooksResponseCopyWithImpl<$Res>
@@ -90,12 +90,12 @@ class __$GoogleBooksResponseCopyWithImpl<$Res>
   @override
   $Res call({
     Object kind = freezed,
-    Object totalItem = freezed,
+    Object totalItems = freezed,
     Object items = freezed,
   }) {
     return _then(_GoogleBooksResponse(
       kind: kind == freezed ? _value.kind : kind as String,
-      totalItem: totalItem == freezed ? _value.totalItem : totalItem as int,
+      totalItems: totalItems == freezed ? _value.totalItems : totalItems as int,
       items:
           items == freezed ? _value.items : items as List<GoogleBookResponse>,
     ));
@@ -106,7 +106,7 @@ class __$GoogleBooksResponseCopyWithImpl<$Res>
 class _$_GoogleBooksResponse
     with DiagnosticableTreeMixin
     implements _GoogleBooksResponse {
-  const _$_GoogleBooksResponse({this.kind, this.totalItem, this.items});
+  const _$_GoogleBooksResponse({this.kind, this.totalItems, this.items});
 
   factory _$_GoogleBooksResponse.fromJson(Map<String, dynamic> json) =>
       _$_$_GoogleBooksResponseFromJson(json);
@@ -114,13 +114,13 @@ class _$_GoogleBooksResponse
   @override
   final String kind;
   @override
-  final int totalItem;
+  final int totalItems;
   @override
   final List<GoogleBookResponse> items;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'GoogleBooksResponse(kind: $kind, totalItem: $totalItem, items: $items)';
+    return 'GoogleBooksResponse(kind: $kind, totalItems: $totalItems, items: $items)';
   }
 
   @override
@@ -129,7 +129,7 @@ class _$_GoogleBooksResponse
     properties
       ..add(DiagnosticsProperty('type', 'GoogleBooksResponse'))
       ..add(DiagnosticsProperty('kind', kind))
-      ..add(DiagnosticsProperty('totalItem', totalItem))
+      ..add(DiagnosticsProperty('totalItems', totalItems))
       ..add(DiagnosticsProperty('items', items));
   }
 
@@ -139,9 +139,9 @@ class _$_GoogleBooksResponse
         (other is _GoogleBooksResponse &&
             (identical(other.kind, kind) ||
                 const DeepCollectionEquality().equals(other.kind, kind)) &&
-            (identical(other.totalItem, totalItem) ||
+            (identical(other.totalItems, totalItems) ||
                 const DeepCollectionEquality()
-                    .equals(other.totalItem, totalItem)) &&
+                    .equals(other.totalItems, totalItems)) &&
             (identical(other.items, items) ||
                 const DeepCollectionEquality().equals(other.items, items)));
   }
@@ -150,7 +150,7 @@ class _$_GoogleBooksResponse
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(kind) ^
-      const DeepCollectionEquality().hash(totalItem) ^
+      const DeepCollectionEquality().hash(totalItems) ^
       const DeepCollectionEquality().hash(items);
 
   @override
@@ -167,7 +167,7 @@ class _$_GoogleBooksResponse
 abstract class _GoogleBooksResponse implements GoogleBooksResponse {
   const factory _GoogleBooksResponse(
       {String kind,
-      int totalItem,
+      int totalItems,
       List<GoogleBookResponse> items}) = _$_GoogleBooksResponse;
 
   factory _GoogleBooksResponse.fromJson(Map<String, dynamic> json) =
@@ -176,7 +176,7 @@ abstract class _GoogleBooksResponse implements GoogleBooksResponse {
   @override
   String get kind;
   @override
-  int get totalItem;
+  int get totalItems;
   @override
   List<GoogleBookResponse> get items;
   @override

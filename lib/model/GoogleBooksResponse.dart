@@ -9,7 +9,7 @@ part 'GoogleBooksResponse.g.dart';
 abstract class GoogleBooksResponse with _$GoogleBooksResponse {
   const factory GoogleBooksResponse(
       {String kind,
-      int totalItem,
+      int totalItems,
       List<GoogleBookResponse> items}) = _GoogleBooksResponse;
 
   factory GoogleBooksResponse.fromJson(Map<String, dynamic> json) =>
